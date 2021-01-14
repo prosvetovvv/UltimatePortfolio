@@ -15,6 +15,8 @@
 		E10B6D7425AF136700F50AFD /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6D7325AF136700F50AFD /* DataController.swift */; };
 		E10B6D7725B01DBB00F50AFD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6D7625B01DBB00F50AFD /* HomeView.swift */; };
 		E10B6D7A25B01F2400F50AFD /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6D7925B01F2400F50AFD /* ProjectsView.swift */; };
+		E10B6D7D25B05AE900F50AFD /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6D7C25B05AE900F50AFD /* Item-CoreDataHelpers.swift */; };
+		E10B6D8025B05CF300F50AFD /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6D7F25B05CF300F50AFD /* Project-CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E10B6D7325AF136700F50AFD /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E10B6D7625B01DBB00F50AFD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E10B6D7925B01F2400F50AFD /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		E10B6D7C25B05AE900F50AFD /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		E10B6D7F25B05CF300F50AFD /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				E10B6D7925B01F2400F50AFD /* ProjectsView.swift */,
 				E10B6D6125AF075500F50AFD /* ContentView.swift */,
 				E10B6D7325AF136700F50AFD /* DataController.swift */,
+				E10B6D7C25B05AE900F50AFD /* Item-CoreDataHelpers.swift */,
+				E10B6D7F25B05CF300F50AFD /* Project-CoreDataHelpers.swift */,
 				E10B6D6F25AF096800F50AFD /* Main.xcdatamodeld */,
 				E10B6D6325AF075800F50AFD /* Assets.xcassets */,
 				E10B6D6825AF075800F50AFD /* Info.plist */,
@@ -152,10 +158,12 @@
 			files = (
 				E10B6D7A25B01F2400F50AFD /* ProjectsView.swift in Sources */,
 				E10B6D7125AF096800F50AFD /* Main.xcdatamodeld in Sources */,
+				E10B6D8025B05CF300F50AFD /* Project-CoreDataHelpers.swift in Sources */,
 				E10B6D7425AF136700F50AFD /* DataController.swift in Sources */,
 				E10B6D6225AF075500F50AFD /* ContentView.swift in Sources */,
 				E10B6D7725B01DBB00F50AFD /* HomeView.swift in Sources */,
 				E10B6D6025AF075500F50AFD /* UltimatePortfolioApp.swift in Sources */,
+				E10B6D7D25B05AE900F50AFD /* Item-CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
