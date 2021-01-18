@@ -21,6 +21,7 @@
 		E10B6D8625B1B5A900F50AFD /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6D8525B1B5A900F50AFD /* ItemRowView.swift */; };
 		E10B6D8925B585B000F50AFD /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6D8825B585B000F50AFD /* ProjectHeaderView.swift */; };
 		E10B6D8C25B58B4F00F50AFD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10B6D8B25B58B4F00F50AFD /* Colors.xcassets */; };
+		E10B6D8F25B5AD6E00F50AFD /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6D8E25B5AD6E00F50AFD /* EditProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E10B6D8525B1B5A900F50AFD /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		E10B6D8825B585B000F50AFD /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		E10B6D8B25B58B4F00F50AFD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E10B6D8E25B5AD6E00F50AFD /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				E10B6D7625B01DBB00F50AFD /* HomeView.swift */,
 				E10B6D7925B01F2400F50AFD /* ProjectsView.swift */,
 				E10B6D8225B1780000F50AFD /* EditItemView.swift */,
+				E10B6D8E25B5AD6E00F50AFD /* EditProjectView.swift */,
 				E10B6D8525B1B5A900F50AFD /* ItemRowView.swift */,
 				E10B6D6125AF075500F50AFD /* ContentView.swift */,
 				E10B6D7325AF136700F50AFD /* DataController.swift */,
@@ -177,6 +180,7 @@
 				E10B6D8625B1B5A900F50AFD /* ItemRowView.swift in Sources */,
 				E10B6D6225AF075500F50AFD /* ContentView.swift in Sources */,
 				E10B6D7725B01DBB00F50AFD /* HomeView.swift in Sources */,
+				E10B6D8F25B5AD6E00F50AFD /* EditProjectView.swift in Sources */,
 				E10B6D6025AF075500F50AFD /* UltimatePortfolioApp.swift in Sources */,
 				E10B6D7D25B05AE900F50AFD /* Item-CoreDataHelpers.swift in Sources */,
 				E10B6D8325B1780000F50AFD /* EditItemView.swift in Sources */,

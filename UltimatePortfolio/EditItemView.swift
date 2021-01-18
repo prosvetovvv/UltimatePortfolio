@@ -30,7 +30,9 @@ struct EditItemView: View {
         Form {
             Section(header: Text("Basic settings")) {
                 TextField("Item name", text: $title)
+                    .onChange(of: title) { _ in update() }
                 TextField("Description", text: $detail)
+                    .onChange(of: detail) { _ in update() }
             }
             
             Section(header: Text("Priority")) {
@@ -40,17 +42,15 @@ struct EditItemView: View {
                     Text("High").tag(3)
                 }
                 .pickerStyle(SegmentedPickerStyle())
+                .onChange(of: priority) { _ in update() }
             }
             
             Section {
                 Toggle("Mark Completed", isOn: $completed)
+                    .onChange(of: completed) { _ in update() }
             }
         }
         .navigationTitle("Edit Item")
-        .onChange(of: title) { _ in update() }
-        .onChange(of: detail) { _ in update() }
-        .onChange(of: priority) { _ in update() }
-        .onChange(of: completed) { _ in update() }
         .onDisappear(perform: dataController.save)
         
     }
