@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProjectsView: View {
+    @EnvironmentObject var dataController: DataController
+    @Environment(\.managedObjectContext) var managetObjectContext
+    
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
     
@@ -30,13 +33,35 @@ struct ProjectsView: View {
                         ForEach(project.projectItems) { item in
                             ItemRowView(item: item)
                         }
+                        .onDelete { offsets in
+                            let allItems = project.projectItems
+                            
+                            for offset in offsets {
+                                let item = allItems[offset]
+                                dataController.delete(item)
+                            }
+                            dataController.save()
+                        }
                     }
                 }
-                
+            }
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects ")
+            .toolbar {
+                if showClosedProjects == false {
+                    Button {
+                        withAnimation {
+                            let project = Project(context: managetObjectContext)
+                            project.closed = false
+                            project.creationDate = Date()
+                            dataController.save()
+                        }
+                    } label: {
+                        Label("Add Project", systemImage: "plus")
+                    }
+                }
             }
         }
-        .listStyle(InsetGroupedListStyle())
-        .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects ")
     }
 }
 
